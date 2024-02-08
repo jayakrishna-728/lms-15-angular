@@ -1,19 +1,19 @@
 <div class="courses" id="courses">
     <header>Basic</header>
     <div class="courses__body">
-        <ng-container *ngFor="let course of courseList">
+        <ng-container *ngFor="let course of basicCourseList">
             <app-courses-card [courseData]="course"></app-courses-card>
         </ng-container>
     </div>
     <header>Intermediate</header>
     <div class="courses__body">
-        <ng-container *ngFor="let course of courseList">
+        <ng-container *ngFor="let course of intermediateCourseList">
             <app-courses-card [courseData]="course"></app-courses-card>
         </ng-container>
     </div>
     <header>Advanced</header>
     <div class="courses__body">
-        <ng-container *ngFor="let course of courseList">
+        <ng-container *ngFor="let course of advancedCourseList">
             <app-courses-card [courseData]="course"></app-courses-card>
         </ng-container>
     </div>

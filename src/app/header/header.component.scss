@@ -1,0 +1,181 @@
+
+.container{
+    .header{
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0% 10%;
+        align-items: center;
+        border-bottom: 1px solid rgb(255, 191, 35);
+        &__companyname{
+            flex: 1;
+            padding: 2% 0;
+            color: black;
+            &__text{
+                font-size: 24px;
+                font-weight: 700;
+                padding-bottom: 5px;
+                letter-spacing: 1px;
+                &:hover{
+                    color: rgb(255, 191, 35);
+                    transform: scale(1);
+                    transition: all .4s ease-in;
+                    cursor: pointer;
+                }
+            }
+            &__description{
+                font-size: 18px;
+                font-size: 600;
+            }
+        }
+        &__submenu{
+            flex:1.5;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            div{
+                font-size: 17px;
+                font-weight: 500;
+                padding: 0px 10px;
+                cursor: pointer;
+                &:hover{
+                    transform: scale(1.2);
+                    transition: all .3s ease-in;
+                    color: rgb(255, 191, 35);
+                }
+            }
+            .active{
+                color: rgb(255, 191, 35);
+            }
+            
+        }
+        &__mobilesubmenu{
+            display: none;
+        }
+        &__getstarted{
+            flex: 1;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            div{
+                background: rgb(255, 191, 35);
+                color: black;
+                cursor: pointer;
+                text-align: center;
+                border-radius: 6px;
+                padding: 14px 15px;
+                min-width: 150px;
+                max-width: 200px;
+                font-size: 15px;
+                font-weight: 700;
+                border: 2px solid black;
+                &:hover{
+                    color: rgb(255, 191, 35);
+                    background: black;
+                    transform: scale(1);
+                    transition: all .4s ease-in;
+                    cursor: pointer;
+                    border: 2px solid rgb(255, 191, 35);
+                }
+            }
+
+        }
+
+    }
+}
+
+@keyframes slideDown {
+    from {
+        top: -50%;
+    }
+    to {
+        top: 92%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .container {
+        .header{
+            padding: 0px 10px;
+            height: 70px;
+            position: relative;
+            &__companyname{
+                padding: 1% 0;
+                &__text{
+                    font-size: 20px;
+                    padding-bottom: 3px;
+                }
+                &__description{
+                    font-size: 14px;
+                    font-size: 600;
+                }
+                z-index: 0.5;
+            }
+            &__getstarted{
+                display: none;
+            }
+            &__mobilesubmenu{
+                display: block;
+                div{
+                    padding: 8px 9px;
+                    background:rgb(255, 191, 35);
+                    border-radius: 4px;
+                }
+                img{
+                    height: 23px;
+                    width: 23px;
+                }
+                span{
+                    padding: 2px 4px;
+                    font-size: 20px;
+                    font-weight: 700;
+                }
+            }
+            
+            &__msubmenu{
+            animation: slideDown 0.9s ease 0.1s;
+            display: block;
+            background: white;
+            position: absolute;
+            right: 0px;
+            left: 0px;
+            top: 92%;
+            // top: 92%;
+            z-index: 1;
+            border-bottom: 2px solid rgb(255, 191, 35);
+            overflow: hidden;
+            div{
+                    color: black;
+                    font-size: 16px;
+                    font-weight: 500;
+                    padding: 10px 25px;
+                 &:hover{
+                        transform: unset;
+                        transition: unset;
+                        color: rgb(255, 191, 35);
+                }
+            }
+            .active{
+                    color: rgb(255, 191, 35);
+            }
+            }
+            &__submenu{
+                display: none;
+            }
+        }
+
+    }
+    .open{
+        animation-duration: 0.9s; /* Adjust duration as needed */
+    }
+
+  }
+  @media only screen and (max-width: 1200px) {
+    .container {
+        .header{
+            &__getstarted{
+                display: none;
+            }
+            
+        }
+    }
+  }

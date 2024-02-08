@@ -1,0 +1,43 @@
+
+<div class="contact-container">
+  <div class="left-div">
+    <div class="left-div__img"><img src="assets/location-white.png"/></div>
+    <div class="left-div__heading">Location</div>
+    <div class="left-div__address">D.No:2 -61, Thummalapalem, Prathipadu , Guntur, Andhra Pradesh - 522233</div>
+  </div>
+  <div class="middle-div">
+    <div class="middle-div__img"><img src="assets/email-white.png"/></div>
+    <div class="middle-div__heading">Email us</div>
+    <div class="middle-div__address">venu@gmail.com</div>
+  </div>
+  <div class="right-div">
+    <div class="right-div__img"><img src="assets/cs-white.png"/></div>
+    <div class="right-div__heading">Contact Support</div>
+    <div class="right-div__address">Phone no : 99999999</div>
+  </div>
+</div>
+<div class="form-container">
+  <div class="form-container__heading">CONTACT</div>
+  <div class="form-container__subheading">Get in Touch</div>
+  <div class="form-container__desc">Ask us any questions and we will respond to you within 1 business day.</div>
+  <form (ngSubmit)="submitForm()">
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="firstName" [(ngModel)]="formData.firstName" required>
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="lastName" [(ngModel)]="formData.lastName" required>
+        </div>
+        <div class="form-group">
+          <label for="phoneNumber">Phone Number</label>
+          <input type="tel" id="phoneNumber" name="phoneNumber" [(ngModel)]="formData.phoneNumber" required>
+        </div>
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea id="description" name="description" [(ngModel)]="formData.description" required></textarea>
+        </div>
+        <button type="submit" class="submit-button">Submit</button>
+    </form>
+</div>
+<app-footer></app-footer>

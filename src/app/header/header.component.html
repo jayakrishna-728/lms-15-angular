@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="header">
+        <div class="header__companyname">
+            <div class="header__companyname__text">iEV Technologies</div>
+            <div class="header__companyname__description">iEvoke... iEvolve... iEventuate...</div>
+        </div>
+        <div class="header__submenu">
+            <div [ngClass]="{'active': homeActive}" (click)="navigateHome()">Home</div>
+            <div [ngClass]="{'active': isAboutUs}" (click)="navigateAboutus()">About us</div>
+            <div [ngClass]="{'active': isCourses}" (click)="navigateCourses()">Courses</div>
+            <div [ngClass]="{'active': isTestimonials}" (click)="navigate('testimonals')">Testimonials</div>
+            <div [ngClass]="{'active': isContactus}" (click)="openContactForm()">Contact us</div>
+        </div>
+        <div  *ngIf="mobileSubmenu" class="header__mobilesubmenu">
+            <div>
+                <span (click)="closeSubMenu()">X</span>
+            </div>
+        </div>
+        <div  *ngIf="!mobileSubmenu" class="header__mobilesubmenu">
+            <div>
+                <img (click)="openSubmenu()" src="assets/hambergur.png"/>
+            </div>
+        </div>
+        <div  *ngIf="mobileSubmenu" class="header__msubmenu" [ngClass]="{'open': mobileSubmenu}">
+            <div [ngClass]="{'active': homeActive}" (click)="navigateHome()">Home</div>
+            <div [ngClass]="{'active': isAboutUs}">About us</div>
+            <div [ngClass]="{'active': isCourses}">Courses</div>
+            <div [ngClass]="{'active': isTestimonials}">Testimonials</div>
+            <div [ngClass]="{'active': isContactus}" (click)="openContactForm()">Contact us</div>
+        </div>
+        <div class="header__getstarted">
+            <div (click)="openContactForm()">Get started</div>
+        </div>
+    </div>
+</div>

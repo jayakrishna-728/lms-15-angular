@@ -14,7 +14,7 @@ export class HeaderComponent implements OnInit {
   homeActive:any=false;
   isAboutUs:any=false;
   isCourses:any=false;
-  isTestimonials:any=false;
+  isServices:any=false;
   isContactus:any=false;
   mobileSubmenu:any=false;
 
@@ -27,35 +27,35 @@ export class HeaderComponent implements OnInit {
         this.homeActive=false;
         this.isAboutUs=false;
         this.isCourses=false;
-        this.isTestimonials=false;
+        this.isServices=false;
         this.mobileSubmenu=false;
       } else if(currentRoute.includes("home")){
         this.homeActive=true;
         this.isContactus=false;
         this.isAboutUs=false;
         this.isCourses=false;
-        this.isTestimonials=false;
+        this.isServices=false;
         this.mobileSubmenu=false;
       } else if(currentRoute.includes("courses")){
         this.homeActive=false;
         this.isContactus=false;
         this.isAboutUs=false;
         this.isCourses=true;
-        this.isTestimonials=false;
+        this.isServices=false;
         this.mobileSubmenu=false;
-      } else if(currentRoute.includes("testimonials")){
+      } else if(currentRoute.includes("services")){
         this.homeActive=false;
         this.isContactus=false;
         this.isAboutUs=false;
         this.isCourses=false;
-        this.isTestimonials=true;
+        this.isServices=true;
         this.mobileSubmenu=false;
       } else if(currentRoute.includes("about")){
         this.homeActive=false;
         this.isContactus=false;
         this.isAboutUs=true;
         this.isCourses=false;
-        this.isTestimonials=false;
+        this.isServices=false;
         this.mobileSubmenu=false;
       }
     } , 1000)
@@ -69,7 +69,7 @@ export class HeaderComponent implements OnInit {
     this.homeActive=false;
     this.isAboutUs=false;
     this.isCourses=false;
-    this.isTestimonials=false;
+    this.isServices=false;
     this.mobileSubmenu=false;
   }
 
@@ -80,7 +80,7 @@ export class HeaderComponent implements OnInit {
     this.homeActive=true;
     this.isAboutUs=false;
     this.isCourses=false;
-    this.isTestimonials=false;
+    this.isServices=false;
     this.mobileSubmenu=false;
   }
 
@@ -90,7 +90,7 @@ export class HeaderComponent implements OnInit {
     this.isContactus=false;
     this.homeActive=false;
     this.isCourses=false;
-    this.isTestimonials=false;
+    this.isServices=false;
     this.mobileSubmenu=false;
   }
 
@@ -100,9 +100,21 @@ export class HeaderComponent implements OnInit {
     this.isContactus=false;
     this.homeActive=false;
     this.isCourses=true;
-    this.isTestimonials=false;
+    this.isServices=false;
     this.mobileSubmenu=false;
   }
+
+
+  navigateServices(){
+    this.router.navigateByUrl('/services');
+    this.isAboutUs=false;
+    this.isContactus=false;
+    this.homeActive=false;
+    this.isCourses=false;
+    this.isServices =true;
+    this.mobileSubmenu=false;
+  }
+
 
 
   openSubmenu(){
@@ -117,10 +129,10 @@ export class HeaderComponent implements OnInit {
       this.isCourses=true;
       this.isAboutUs=false;
       this.homeActive=false;
-      this.isTestimonials=false;
+      this.isServices=false;
       this.isContactus=false;
     } else if(element == 'testimonials'){
-      this.isTestimonials=true;
+      this.isServices=true;
       this.isCourses=false;
       this.isAboutUs=false;
       this.homeActive=false;

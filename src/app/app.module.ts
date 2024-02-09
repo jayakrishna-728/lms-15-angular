@@ -12,8 +12,8 @@ import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
 import { CoursesCardComponent } from './courses/courses-card/courses-card.component';
 import { PreviewComponent } from './preview/preview.component';
-import { TestimonalsComponent } from './testimonals/testimonals.component';
 import { AboutComponent } from './about/about.component';
+import { ServicesComponent } from './services/services.component';
 
 @NgModule({
   declarations: [
@@ -26,8 +26,8 @@ import { AboutComponent } from './about/about.component';
     FormComponent,
     HomeComponent,
     PreviewComponent,
-    TestimonalsComponent,
-    AboutComponent
+    AboutComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,

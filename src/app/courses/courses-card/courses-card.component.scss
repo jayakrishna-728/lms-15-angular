@@ -10,12 +10,15 @@
         transform: scale(1.1);
     }
     &__main{
+        border-radius: 6px;
         background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
         padding: 15px;
         height: 140px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        // animation: slideIn .5s ease; /* Add animation here */
+        animation: slideIn .8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards; /* Adjust duration and timing function */
     }
     img{
         height: 160px;
@@ -49,5 +52,15 @@
         &--label{
             font-weight: 600;
         }
+    }
+}
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

@@ -1,4 +1,3 @@
-// @import '../../assets/road.png';
 .contact-container {
     display: flex;
     justify-content: space-between;
@@ -9,7 +8,6 @@
         width: 100%;
         display: flex;
         justify-content: center;
-        // margin-bottom: 100px;
         background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
         &__text{
                 padding-left: 30px;
@@ -17,7 +15,7 @@
                 width: 100%; 
                 color: black;
                 border-radius: 6px;
-                box-shadow: 4px 4px 4px #EF8D9C; /* Box shadow with desired elevation */
+                box-shadow: 4px 4px 4px #EF8D9C; 
                 padding: 20px 15px;
                 &__heading{
                 text-align: start;
@@ -69,9 +67,38 @@
 
     }
   }
+  @keyframes ladderMovement {
+    0% {
+        transform: translateX(-40%) translateY(-20px);
+    }
+    50% {
+        transform: translateX(10%) translateY(-20%); /* Adjust the amount of movement */
+    }
+    100% {
+        transform: translateX(-40%) translateY(0);
+    }
+}
   @keyframes slideInFromLeft {
     0% {
         transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
     }
     100% {
         transform: translateX(0);
@@ -95,30 +122,10 @@
         }
     }
   }
-  
-  @keyframes slideInFromBottom {
-    0% {
-        transform: translateY(100%);
-    }
-    100% {
-        transform: translateY(0);
-    }
-  }
-  
-  @keyframes slideInFromRight {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(0);
-    }
-  }
   .journey{
     padding: 0 10%;
     position: relative;
-    // height: 600px;
     display: flex;
-    // background-image: url('../../assets/road-man.png');
     &__steps{
         font-weight: 700;
         width: 60%;
@@ -132,18 +139,14 @@
                 color: white;
                 transition: transform .5s ease;   
                 transform: scale(0.9);
-                // font-size: 28px;
             }
         }
         &__step1{
             font-size: 14px;
             width: 35%;
             animation: slideInFromRight 4s ease-out forwards;
-            // padding-left: 70%;
         }
         &__step2{
-            // border: 1px solid black;
-            // width: 200px;
             animation: slideInFromLeft 2s ease-out forwards;
             font-size: 18px;
             width: 50%;
@@ -162,13 +165,11 @@
         }
         &__step5{
             font-size: 26px;
-            // border: 1px solid black;
             width: 85%;
             animation: slideInFromRight 7s ease-out forwards;
         }
         &__step6{
             font-size: 28px;
-            // border: 1px solid black;
             width: 100%;
             animation: slideInFromLeft 8s ease-out forwards;
         }
@@ -192,68 +193,36 @@
     text-decoration-color: rgb(255, 191, 35);
     
   }
-
-
-
-  @keyframes ladderMovement {
-    0% {
-        transform: translateX(-40%) translateY(-20px);
-    }
-    50% {
-        transform: translateX(10%) translateY(-20%); /* Adjust the amount of movement */
-    }
-    100% {
-        transform: translateX(-40%) translateY(0);
-    }
-}
-
   @media only screen and (max-width: 600px) {
     .contact-container {
       flex-direction: column;
       padding: 20px 2% 20px 2%;
       &__content{
-        display: flex;
-        justify-content: center;
         flex-direction: column;
-        // padding: 0 5%;
         margin-bottom: 20px;
         &__image{
             display: none;
         }
         &__text{
-                padding-left: 30px;
-                animation: slideInFromRight 1s ease-out forwards;
                 width: unset;
                 height: unset;
-                color: black;
                 border-radius: 6px;
                 border-left: 4px solid #EF8D9C;
-                // border-top: 4px solid rgb(252, 203, 79);
                 box-shadow: 4px 4px 4px #EF8D9C; /* Box shadow with desired elevation */
-                padding: 20px 15px;
                 &__heading{
-                text-align: start;
-                padding: 10px 0px;
-                font-size: 25px;
-                font-weight: 700;
-                color: white;
-                letter-spacing: 2px;
+                    text-align: start;
+                    padding: 10px 0px;
+                    font-size: 25px;
                 }
                 &__subheading{
                     text-align: start;
                     font-size: 19px;
                     padding-top: 5px;
-                    color: white;
-                    font-weight: 700;
-                    letter-spacing: 1px;
                 }
                 &__address{
-                    text-align: start;
                     padding: 10px 0px;
-                    font-size: 15px;
-                    font-weight: 500;
-                    line-height: 35px;
                     color: white;
+                    line-height: 30px;
                     img{
                         height: 10px;
                         width: 10px;
@@ -280,36 +249,6 @@
             margin-top: 15px;
         }
       }
-      
-    
-
-    
-    @keyframes slideInFromLeft {
-      0% {
-          transform: translateX(-100%);
-      }
-      100% {
-          transform: translateX(0);
-      }
-    }
-    
-    @keyframes slideInFromBottom {
-      0% {
-          transform: translateY(100%);
-      }
-      100% {
-          transform: translateY(0);
-      }
-    }
-    
-    @keyframes slideInFromRight {
-      0% {
-          transform: translateX(100%);
-      }
-      100% {
-          transform: translateX(0);
-      }
-    }
 
     .journey{
         padding: 0 5%;
@@ -333,36 +272,27 @@
             &__step1{
                 font-size: 9px;
                 width: 35%;
-                animation: slideInFromRight 4s ease-out forwards;
             }
             &__step2{
-                animation: slideInFromLeft 2s ease-out forwards;
                 font-size: 11px;
                 width: 50%;
             }
             &__step3{
                 font-size: 13px;
                 width: 65%;
-                animation: slideInFromRight 4s ease-out forwards;
             }
             &__step4{
                 font-size: 15px;
                 width: 70%;
-                animation: slideInFromLeft 6s ease-out forwards;
             }
             &__step5{
                 font-size: 17px;
                 width: 85%;
-                animation: slideInFromRight 7s ease-out forwards;
             }
             &__step6{
                 font-size: 19px;
                 width: 100%;
-                animation: slideInFromLeft 8s ease-out forwards;
             }
-    
-            
-    
         }
         &__image{
             display: none;
@@ -377,10 +307,7 @@
         color: black;
         text-align: center;
         text-decoration: underline;
-        text-decoration-color: rgb(255, 191, 35);
-        
+        text-decoration-color: rgb(255, 191, 35); 
       }
-    
-
   }  
   

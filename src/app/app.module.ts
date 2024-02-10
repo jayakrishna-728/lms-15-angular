@@ -14,6 +14,7 @@ import { CoursesCardComponent } from './courses/courses-card/courses-card.compon
 import { PreviewComponent } from './preview/preview.component';
 import { AboutComponent } from './about/about.component';
 import { ServicesComponent } from './services/services.component';
+import { JourneyComponent } from './journey/journey.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ServicesComponent } from './services/services.component';
     HomeComponent,
     PreviewComponent,
     AboutComponent,
-    ServicesComponent
+    ServicesComponent,
+    JourneyComponent
   ],
   imports: [
     BrowserModule,

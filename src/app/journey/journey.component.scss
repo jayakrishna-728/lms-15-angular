@@ -1,0 +1,175 @@
+.journey{
+    padding: 0 10%;
+    position: relative;
+    display: flex;
+    &__steps{
+        font-weight: 700;
+        width: 60%;
+        div{
+            margin: 20px 0px;
+            padding: 15px 10px;
+            border-radius: 4px;
+            background-color: rgb(255, 191, 35);
+            &:hover{
+                background: black;
+                color: white;
+                transition: transform .5s ease;   
+                transform: scale(0.9);
+            }
+        }
+        &__step1{
+            font-size: 14px;
+            width: 35%;
+            animation: slideInFromRight 4s ease-out forwards;
+        }
+        &__step2{
+            animation: slideInFromLeft 2s ease-out forwards;
+            font-size: 18px;
+            width: 50%;
+        }
+        &__step3{
+            font-size: 22px;
+            // border: 1px solid black;
+            width: 65%;
+            animation: slideInFromRight 4s ease-out forwards;
+        }
+        &__step4{
+            font-size: 24px;
+            // border: 1px solid black;
+            width: 70%;
+            animation: slideInFromLeft 6s ease-out forwards;
+        }
+        &__step5{
+            font-size: 26px;
+            width: 85%;
+            animation: slideInFromRight 7s ease-out forwards;
+        }
+        &__step6{
+            font-size: 28px;
+            width: 100%;
+            animation: slideInFromLeft 8s ease-out forwards;
+        }
+
+        
+
+    }
+    &__image{
+        transform: translateX(-50%);
+        animation: ladderMovement 10s infinite alternate; /* Adjust timing and animation as needed */
+    }
+
+  }
+  .headingjourney{
+    font-size: 32px;
+    padding: 0 10%;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 191, 35);
+    
+  }
+
+
+  @keyframes ladderMovement {
+    0% {
+        transform: translateX(-40%) translateY(-20px);
+    }
+    50% {
+        transform: translateX(10%) translateY(-20%); /* Adjust the amount of movement */
+    }
+    100% {
+        transform: translateX(-40%) translateY(0);
+    }
+}
+  @keyframes slideInFromLeft {
+    0% { 
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+  }
+
+
+
+  @media only screen and (max-width: 600px) {
+    .journey{
+        padding: 0 5%;
+        position: relative;
+        display: flex;
+        &__steps{
+            font-weight: 700;
+            width: 100%;
+            div{
+                margin: 10px 0px;
+                padding: 10px 5px;
+                border-radius: 4px;
+                background-color: rgb(255, 191, 35);
+                &:hover{
+                    background: black;
+                    color: white;
+                    transition: transform .5s ease;   
+                    transform: scale(0.7);
+                }
+            }
+            &__step1{
+                font-size: 9px;
+                width: 35%;
+            }
+            &__step2{
+                font-size: 11px;
+                width: 50%;
+            }
+            &__step3{
+                font-size: 13px;
+                width: 65%;
+            }
+            &__step4{
+                font-size: 15px;
+                width: 70%;
+            }
+            &__step5{
+                font-size: 17px;
+                width: 85%;
+            }
+            &__step6{
+                font-size: 19px;
+                width: 100%;
+            }
+        }
+        &__image{
+            display: none;
+        }
+    
+      }
+      .headingjourney{
+        margin-bottom: 5px;
+        font-size: 28px;
+        padding: 0 2%;
+        font-weight: 700;
+        color: black;
+        text-align: center;
+        text-decoration: underline;
+        text-decoration-color: rgb(255, 191, 35); 
+      }
+  }  
+  

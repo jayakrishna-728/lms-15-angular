@@ -1,3 +1,4 @@
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
 
@@ -9,7 +10,7 @@ export class AppService {
   private showContactFormSubject: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
   public showContactForm$: Observable<boolean> = this.showContactFormSubject.asObservable();
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   navigateContactForm() {
     this.showContactFormSubject.next(!this.showContactFormSubject.value);
@@ -18,6 +19,16 @@ export class AppService {
   navigateHome(){
     this.showContactFormSubject.next(false);
   }
+   postData(user:any): Observable<any> {
+    const url = 'https://lms-backend-drab.vercel.app/userdatar';
+    // return this.http.post(url, user);
+
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json'
+    });
+    return this.http.post(url, user, { headers });
+  }
+  
 
 
 }

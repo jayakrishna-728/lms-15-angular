@@ -4,17 +4,17 @@
         height: 100%;
         display: flex;
         justify-content: space-between;
-        padding: 0% 10%;
+        padding: 0% 5%;
         align-items: center;
         border-bottom: 1px solid rgb(255, 191, 35);
         &__companyname{
             flex: 1;
-            padding: 2% 0;
+            padding: 1.5% 0;
             color: black;
             &__text{
                 font-size: 24px;
                 font-weight: 700;
-                padding-bottom: 5px;
+                padding-bottom: 5px; 
                 letter-spacing: 1px;
                 &:hover{
                     color: rgb(255, 191, 35);
@@ -24,19 +24,20 @@
                 }
             }
             &__description{
-                font-size: 18px;
+                font-size: 14px;
                 font-size: 600;
             }
         }
-        &__submenu{
-            flex:1.5;
+    &__submenu{
+            // flex:1;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding-right: 10px;
             div{
                 font-size: 17px;
                 font-weight: 500;
-                padding: 0px 10px;
+                padding: 0px 20px;
                 cursor: pointer;
                 &:hover{
                     transform: scale(1.2);
@@ -53,7 +54,7 @@
             display: none;
         }
         &__getstarted{
-            flex: 1;
+            // flex: 1;
             justify-content: center;
             align-items: center;
             display: flex;

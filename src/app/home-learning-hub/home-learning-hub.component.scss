@@ -1,0 +1,215 @@
+.learning{
+    padding: 30px 5%;
+    &__heading{
+        text-align: center;
+        font-size: 26px;
+        font-weight: 700;
+    }
+    &__desc{
+        padding-top: 20px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+    }
+    &__subheading{
+        padding-top: 30px;
+        font-size: 22px;
+        font-weight: 700;
+    }
+    &__journey{
+        padding-top: 20px;
+        font-size: 14px;
+        font-weight: 500;
+        display: flex;
+        .arrow {
+            margin-left: 50px;
+            position: relative;
+            background: pink;
+            width: 150px;
+            height: 100px;
+            text-align:center;
+            // line-height:50px;
+            margin-bottom:10px;
+            div{
+                font-size: 12px;
+                color: black;
+                position: absolute;
+                top: 50%;
+                left: 61%;
+                transform: translate(-50%,-50%);
+            }
+          }
+          
+          .arrow:after {
+            border: solid transparent;
+            content: " ";
+            position: absolute;
+            border-bottom-color: white;
+            border-width: 50px;
+            left: 0;
+            top: 0;
+            transform: rotate(90deg);
+          }
+          
+          .arrow:before {
+            border: solid transparent;
+            content: " ";
+            position: absolute;
+            border-bottom-color: pink;
+            border-width: 50px;
+            left: 150px;
+            top: 0;
+            transform: rotate(90deg);
+          }
+    }
+    &__joinus{
+        padding-top: 20px;
+        font-size: 22px;
+        font-weight: 700;
+    }
+    &__text{
+        padding-top: 10px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+    }
+    &__textfinal{
+        padding-top: 25px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    &__button{
+        padding-top: 10px;
+        font-weight: 700;
+        div{
+            width: 200px;
+            background-color: rgb(255, 191, 35);
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 700;
+            padding: 15px 15px;
+            cursor: pointer;
+            color: black;
+            margin-top: 10px;
+            &:hover {
+              background-color: black;
+              color: rgb(255,191,35);
+            }
+        }
+        
+
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .learning{
+        padding: 10px 1%;
+        &__heading{
+            text-align: center;
+            font-size: 22px;
+            font-weight: 700;
+        }
+        &__desc{
+            padding-top: 10px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 30px;
+        }
+        &__subheading{
+            padding-top: 15px;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        &__journey{
+            padding-top: 40px;
+            font-size: 12px;
+            font-weight: 500;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .arrow {
+                margin-left: 10px;
+                position: relative;
+                background: pink;
+                width: 100px;
+                height: 50px;
+                text-align:center;
+                margin-bottom:10px;
+                // transform: rotate(90deg);
+                // margin-bottom: 100px;
+                div{
+                    font-size: 10px;
+                    color: black;
+                    position: absolute;
+                    top: 50%;
+                    left: 61%;
+                    transform: translate(-50%,-50%);
+                }
+              }
+              
+              .arrow:after {
+                border: solid transparent;
+                content: " ";
+                position: absolute;
+                border-bottom-color: white;
+                border-width: 25px;
+                left: 0;
+                top: 0;
+                transform: rotate(90deg);
+              }
+              
+              .arrow:before {
+                border: solid transparent;
+                content: " ";
+                position: absolute;
+                border-bottom-color: pink;
+                border-width: 25px;
+                left: 100px;
+                top: 0;
+                transform: rotate(90deg);
+              }
+        }
+        &__joinus{
+            padding-top: 20px;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        &__text{
+            padding-top: 10px;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 30px;
+        }
+        &__textfinal{
+            padding-top: 25px;
+            font-size: 16px;
+            font-weight: 700;
+        }
+        &__button{
+            padding-top: 10px;
+            font-weight: 700;
+            div{
+                width: 200px;
+                background-color: rgb(255, 191, 35);
+                border: none;
+                border-radius: 4px;
+                font-size: 12px;
+                font-weight: 700;
+                padding: 15px 15px;
+                cursor: pointer;
+                color: black;
+                margin-top: 10px;
+                &:hover {
+                  background-color: black;
+                  color: rgb(255,191,35);
+                }
+            }
+            
+    
+        }
+    }
+    
+
+}

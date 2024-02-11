@@ -15,6 +15,11 @@ import { AboutComponent } from './about/about.component';
 import { ServicesComponent } from './services/services.component';
 import { JourneyComponent } from './journey/journey.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HomeLearningHubComponent } from './home-learning-hub/home-learning-hub.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { FocusComponent } from './focus/focus.component';
+import { BlogsComponent } from './blogs/blogs.component';
+import { CareersComponent } from './careers/careers.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +34,12 @@ import { HttpClientModule } from '@angular/common/http';
     PreviewComponent,
     AboutComponent,
     ServicesComponent,
-    JourneyComponent
+    JourneyComponent,
+    HomeLearningHubComponent,
+    TestimonialsComponent,
+    FocusComponent,
+    BlogsComponent,
+    CareersComponent
   ],
   imports: [
     BrowserModule,

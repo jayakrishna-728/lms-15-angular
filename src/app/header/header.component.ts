@@ -17,6 +17,7 @@ export class HeaderComponent implements OnInit {
   isServices:any=false;
   isContactus:any=false;
   mobileSubmenu:any=false;
+  isLearningHub:any=false;
 
   ngOnInit(): void {
     setTimeout(()=>{
@@ -95,7 +96,7 @@ export class HeaderComponent implements OnInit {
   }
 
   navigateCourses(){
-    this.router.navigateByUrl('/courses');
+    this.router.navigateByUrl('/ievlearning');
     this.isAboutUs=false;
     this.isContactus=false;
     this.homeActive=false;
@@ -105,8 +106,16 @@ export class HeaderComponent implements OnInit {
   }
 
 
+  navigateBlog(){
+    this.router.navigateByUrl('/blog');
+  }
+  navigateCareers(){
+    this.router.navigateByUrl('/careers');
+  }
+
+
   navigateServices(){
-    this.router.navigateByUrl('/services');
+    this.router.navigateByUrl('/ievlearning');
     this.isAboutUs=false;
     this.isContactus=false;
     this.homeActive=false;

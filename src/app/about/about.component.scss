@@ -37,7 +37,10 @@
             height: 400px;
             width: 400px;
             opacity: 0.7;
-            animation: rotateImage 25s linear infinite;
+            // animation: rotateImage 25s linear infinite;
+        }
+        div{
+
         }
     }
     
@@ -109,34 +112,40 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    align-items: center;
-    padding: 30px 10%;
+    // align-items: center;
+    padding: 30px 5%;
     &__content{
         display: flex;
         justify-content: center;
         margin-bottom: 50px;
         &__image{
             display: flex;
+            flex-direction: column;
             align-items: center;
             animation: slideInFromLeft 1s ease-out forwards;
-            box-shadow: 4px 4px 4px rgb(252, 203, 79); /* Box shadow with desired elevation */
-            border-top: 4px solid rgb(252, 203, 79);
-            border-left: 4px solid rgb(252, 203, 79);
             padding: 15px 25px 15px 15px;
+            width: 25%;
             img{
-                height: 200px;
-                width: 200px;
+                height: 150px;
+                width: 150px;
+            }
+            div{
+                font-size: 24px;
+                font-weight: 700;
+                padding-top: 20px;
+
             }
         }
         &__text{
+                width: 75%;
                 padding-left: 30px;
                 animation: slideInFromRight 1s ease-out forwards;
                 width: 100%;
                 // height: 250px;
                 color: black;
                 border-radius: 6px;
-                border-top: 4px solid rgb(252, 203, 79);
-                box-shadow: 4px 4px 4px rgb(252, 203, 79); /* Box shadow with desired elevation */
+                // border-top: 4px solid rgb(252, 203, 79);
+                // box-shadow: 4px 4px 4px rgb(252, 203, 79); /* Box shadow with desired elevation */
                 padding: 20px 15px;
                 &__heading{
                 text-align: start;
@@ -152,13 +161,18 @@
                     color: black;
                     font-weight: 700;
                     letter-spacing: 1px;
+                    padding-bottom: 10px;
                 }
                 &__address{
                     text-align: start;
                     padding: 10px 0px;
-                    font-size: 15px;
+                    font-size: 18px;
                     font-weight: 500;
-                    line-height: 35px;
+                    line-height: 30px;
+                    span{
+                        font-weight: 700;
+                        font-size: 20px;
+                    }
             
                 }
 
@@ -216,9 +230,9 @@
                 height: unset;
                 color: black;
                 border-radius: 6px;
-                border-left: 4px solid rgb(252, 203, 79);
+                // border-left: 4px solid rgb(252, 203, 79);
                 // border-top: 4px solid rgb(252, 203, 79);
-                box-shadow: 4px 4px 4px rgb(252, 203, 79); /* Box shadow with desired elevation */
+                // box-shadow: 4px 4px 4px rgb(252, 203, 79); /* Box shadow with desired elevation */
                 padding: 20px 15px;
                 &__heading{
                 text-align: start;

@@ -64,18 +64,6 @@
   }
 }
 
-.left-div {
-  animation: slideInFromLeft 1s ease-out forwards;
-}
-
-.middle-div {
-  animation: slideInFromBottom 1s ease-out forwards;
-}
-
-.right-div {
-  animation: slideInFromRight 1s ease-out forwards;
-}
-
 .form-container{
     padding: 30px 10%;
     background-color: black;
@@ -231,18 +219,6 @@
     100% {
         transform: translateX(0);
     }
-  }
-  
-  .left-div {
-    animation: slideInFromLeft 1s ease-out forwards;
-  }
-  
-  .middle-div {
-    animation: slideInFromBottom 1s ease-out forwards;
-  }
-  
-  .right-div {
-    animation: slideInFromRight 1s ease-out forwards;
   }
   
   .form-container{

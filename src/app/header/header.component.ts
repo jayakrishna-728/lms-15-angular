@@ -17,6 +17,8 @@ export class HeaderComponent implements OnInit {
   isServices:any=false;
   isContactus:any=false;
   mobileSubmenu:any=false;
+  isCareers:any=false;
+  isBlogs:any=false
   isLearningHub:any=false;
 
   ngOnInit(): void {
@@ -30,6 +32,8 @@ export class HeaderComponent implements OnInit {
         this.isCourses=false;
         this.isServices=false;
         this.mobileSubmenu=false;
+        this.isBlogs=false;
+        this.isCareers=false;
       } else if(currentRoute.includes("home")){
         this.homeActive=true;
         this.isContactus=false;
@@ -37,13 +41,17 @@ export class HeaderComponent implements OnInit {
         this.isCourses=false;
         this.isServices=false;
         this.mobileSubmenu=false;
-      } else if(currentRoute.includes("courses")){
+        this.isBlogs=false;
+        this.isCareers=false;
+      } else if(currentRoute.includes("ievlearning")){
         this.homeActive=false;
         this.isContactus=false;
         this.isAboutUs=false;
         this.isCourses=true;
         this.isServices=false;
         this.mobileSubmenu=false;
+        this.isBlogs=false;
+        this.isCareers=false;
       } else if(currentRoute.includes("services")){
         this.homeActive=false;
         this.isContactus=false;
@@ -51,6 +59,8 @@ export class HeaderComponent implements OnInit {
         this.isCourses=false;
         this.isServices=true;
         this.mobileSubmenu=false;
+        this.isBlogs=false;
+        this.isCareers=false;
       } else if(currentRoute.includes("about")){
         this.homeActive=false;
         this.isContactus=false;
@@ -58,6 +68,26 @@ export class HeaderComponent implements OnInit {
         this.isCourses=false;
         this.isServices=false;
         this.mobileSubmenu=false;
+        this.isBlogs=false;
+        this.isCareers=false;
+      }  else if(currentRoute.includes("blogs")){
+        this.homeActive=false;
+        this.isContactus=false;
+        this.isAboutUs=false;
+        this.isCourses=false;
+        this.isServices=false;
+        this.mobileSubmenu=false;
+        this.isBlogs=true;
+        this.isCareers=false;
+      } else if(currentRoute.includes("careers")){
+        this.homeActive=false;
+        this.isContactus=false;
+        this.isAboutUs=false;
+        this.isCourses=false;
+        this.isServices=false;
+        this.mobileSubmenu=false;
+        this.isBlogs=false;
+        this.isCareers=true;
       }
     } , 1000)
      
@@ -72,6 +102,8 @@ export class HeaderComponent implements OnInit {
     this.isCourses=false;
     this.isServices=false;
     this.mobileSubmenu=false;
+    this.isBlogs=false;
+    this.isCareers=false;
   }
 
 
@@ -83,6 +115,8 @@ export class HeaderComponent implements OnInit {
     this.isCourses=false;
     this.isServices=false;
     this.mobileSubmenu=false;
+    this.isBlogs=false;
+    this.isCareers=false;
   }
 
   navigateAboutus(){
@@ -93,6 +127,8 @@ export class HeaderComponent implements OnInit {
     this.isCourses=false;
     this.isServices=false;
     this.mobileSubmenu=false;
+    this.isBlogs=false;
+    this.isCareers=false;
   }
 
   navigateCourses(){
@@ -103,14 +139,32 @@ export class HeaderComponent implements OnInit {
     this.isCourses=true;
     this.isServices=false;
     this.mobileSubmenu=false;
+    this.isBlogs=false;
+    this.isCareers=false;
   }
 
 
   navigateBlog(){
     this.router.navigateByUrl('/blog');
+      this.homeActive=false;
+      this.isContactus=false;
+      this.isAboutUs=false;
+      this.isCourses=false;
+      this.isServices=false;
+      this.mobileSubmenu=false;
+      this.isBlogs=true;
+      this.isCareers=false;
   }
   navigateCareers(){
     this.router.navigateByUrl('/careers');
+    this.homeActive=false;
+    this.isContactus=false;
+        this.isAboutUs=false;
+        this.isCourses=false;
+        this.isServices=false;
+        this.mobileSubmenu=false;
+        this.isBlogs=false;
+        this.isCareers=true;
   }
 
 

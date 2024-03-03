@@ -136,11 +136,11 @@ export class HeaderComponent implements OnInit {
     this.isAboutUs=false;
     this.isContactus=false;
     this.homeActive=false;
-    this.isCourses=true;
     this.isServices=false;
     this.mobileSubmenu=false;
     this.isBlogs=false;
     this.isCareers=false;
+    this.isCourses=true;
   }
 
 

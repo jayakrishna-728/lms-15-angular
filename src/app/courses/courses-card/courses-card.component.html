@@ -1,16 +1,13 @@
 <div class="course-card">
+    <div class="course-card__image">
+                <img [src]="courseData.img" alt=""/>
+    </div>
     <div class="course-card__main">
-        <!-- <img [src]="courseData.img" alt=""/> -->
         <div class="course-card__title">{{courseData.title}}</div>
-        <!-- <div class="course-card__description"></div> -->
         <div class="course-card__info">
             <div class="course-card__col">
-                <span class="course-card__col--label">Price</span>
+              12 x 
                 <span>{{courseData.price}}</span>
-            </div>
-            <div class="course-card__col">
-                <span class="course-card__col--label">Duration</span>
-                <span>{{courseData.duration}}</span>
             </div>
         </div>
     </div>

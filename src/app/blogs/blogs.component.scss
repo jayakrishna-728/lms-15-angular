@@ -1,0 +1,16 @@
+.blogs{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    &__heading{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    &__text{
+        padding-top: 25px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}

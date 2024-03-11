@@ -1,0 +1,9 @@
+div{
+    padding-top: 80px;
+}
+
+@media only screen and (max-width: 600px) {
+    div{
+        padding-top: 60px;
+    }
+}

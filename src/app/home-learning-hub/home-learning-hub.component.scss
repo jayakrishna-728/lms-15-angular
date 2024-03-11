@@ -2,14 +2,16 @@
     padding: 30px 5%;
     &__heading{
         text-align: center;
-        font-size: 26px;
-        font-weight: 700;
+        font-size: 35px;
     }
     &__desc{
         padding-top: 20px;
-        font-size: 20px;
+        font-size: 17px;
         font-weight: 500;
         line-height: 30px;
+        span{
+            font-weight: 700;
+        }
     }
     &__subheading{
         padding-top: 30px;
@@ -69,9 +71,12 @@
     }
     &__text{
         padding-top: 10px;
-        font-size: 20px;
+        font-size: 17px;
         font-weight: 500;
         line-height: 30px;
+        span{
+            font-weight: 700;
+        }
     }
     &__textfinal{
         padding-top: 25px;
@@ -108,18 +113,18 @@
         padding: 10px 1%;
         &__heading{
             text-align: center;
-            font-size: 22px;
+            font-size: 18px;
             font-weight: 700;
         }
         &__desc{
             padding-top: 10px;
-            font-size: 14px;
+            font-size: 12px;
             font-weight: 500;
             line-height: 30px;
         }
         &__subheading{
             padding-top: 15px;
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 700;
         }
         &__journey{
@@ -178,9 +183,9 @@
         }
         &__text{
             padding-top: 10px;
-            font-size: 16px;
+            font-size: 12px;
             font-weight: 500;
-            line-height: 30px;
+            line-height: 20px;
         }
         &__textfinal{
             padding-top: 25px;

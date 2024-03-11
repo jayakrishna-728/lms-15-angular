@@ -4,15 +4,17 @@
     overflow: hidden;
     &__desc{
         position: relative;
-        padding: 30px 5% 30px 5%;
-        height: 100px;
+        padding: 30px 10% 30px 10%;
+        height: 250px;
+        background-image: url('../../assets/journeyhome.png '); /* Path to your background image */
+        background-size: cover; /* Cover the entire container */
+        background-position: center; /* Center the background image */
         &__text{
             font-size: 24px;
             font-weight: 400;
             text-align: start;
             overflow: hidden;
             white-space: nowrap;
-            // border-right: .15em solid rgb(255, 191, 35); /* The typewriter cursor */
             animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
             margin: 0 auto;
             display: inline-block;
@@ -41,11 +43,19 @@
         &__obj{
             display: flex;
             width: 50%;
-            div{
-                padding-top: 30px;
-                padding-right: 30px;
+            height: 230px;
+            align-items: flex-end;
+            &__content{
+                padding: 0px 25px;
                 font-size: 16px;
                 font-weight: 500;
+                div{
+                    padding: 10px 0px;
+                    img{
+                        height: 50px;
+                        width: 50px;
+                    }
+                }
             }
         }
         &__movimg{
@@ -72,23 +82,28 @@
     &__video{
         width: 100%;
         position: relative;
+        height: 446px;
         &__tag{
             width: 100%;
             opacity: 0.3;
+            height: calc(100% - 40px); /* Subtract 20px from top and bottom */
+            object-fit: cover; /* Ensure video fills the container */        
         }
         &__text{
             position: absolute;
             top: 40%;
             display: flex;
             justify-content: space-between;
-            padding: 0px 35px;
+            padding: 0px 10%;
             &__left{
                 font-size: 38px;
                 width: 37%;
+                font-family: 'Space Grotesk', sans-serif;
             }
             &__right{
                 font-size: 16px;
-                width: 37%;
+                width: 45%;
+                line-height: 30px;
             }
         }
     }
@@ -100,7 +115,7 @@
         &__desc{
             position: relative;
             padding: 20px 5px 10px 0px;
-            height: 70px;
+            height: 100px;
             &__text{
                 font-size: 10px;
                 font-weight: 400;
@@ -131,13 +146,19 @@
                 }
             }
             &__obj{
-                display: flex;
-                width: 50%;
-                div{
-                    padding-top: 20px;
-                    padding-right: 15px;
-                    font-size: 12px;
+                height: 85px;
+                &__content{
+                    padding: 0px 10px;
+                    font-size: 13px;
                     font-weight: 500;
+                    div{
+                        padding: 3px 0px;
+                        font-size: 10px;
+                        img{
+                            height: 20px;
+                            width: 20px;
+                        }
+                    }
                 }
             }
             &__movimg{
@@ -162,9 +183,11 @@
         &__video{
             width: 100%;
             position: relative;
+            height: 330px;
             &__tag{
                 width: 100%;
                 opacity: 0.2;
+                height: 330px;
             }
             &__text{
                 position: absolute;

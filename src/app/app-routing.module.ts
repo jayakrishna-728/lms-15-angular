@@ -4,7 +4,6 @@ import { FormComponent } from './form/form.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { CoursesComponent } from './courses/courses.component';
-import { ServicesComponent } from './services/services.component';
 import { BlogsComponent } from './blogs/blogs.component';
 import { CareersComponent } from './careers/careers.component';
 

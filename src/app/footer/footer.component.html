@@ -6,33 +6,33 @@
     <div class="footer__container">
         <div class="footer__details">
             <div class="footer__col">
-                <div class="footer__col__header"> Contact</div>
-                <div class="footer__col__text">
-                    <div>prathipadu</div>
-                    <div>Guntur</div>
-                    <div>Andhra pradesh - 522233</div>
-                </div>
             </div>
             <div class="footer__enquiries">
                 <div class="footer__col">
+                    <div class="footer__col__header"> Contact</div>
+                    <div class="footer__col__text">
+                        <div>Guntur</div>
+                        <div>Andhra pradesh </div>
+                        <div>India</div>
+                    </div>
+                </div>
+                <div class="footer__col">
                     <div class="footer__col__header">General Inquiries</div>
-                    <div class="footer__col__text">+91 - 9160178492</div>
-                    <div class="footer__col__text">+91 - 9542506795</div>
+                    <div class="footer__col__en"><img src="../../assets/phone-call.png"/><div>+91 - 9160178492</div></div>
+                    <div class="footer__col__en"><img src="../../assets/phone-call.png"/><div>+91 - 9542506795</div></div>
                 </div>
                 <div class="footer__col">
                     <div class="footer__col__header"> Sales</div>
-                    <div class="footer__col__text">info@ievtechsales.com</div>
-                </div>
-                <div class="footer__col">
+                    <div class="footer__col__text"><a href="mailto:info@info@ievtechsales.com">info@info@ievtechsales.com</a></div>
                     <div class="footer__col__header">Customer Care </div>
-                    <div class="footer__col__text">info@ievtechcc.com</div>
+                    <div class="footer__col__text"><a href="mailto:info@info@ievtechsales.com">info@info@ievtechsales.com</a></div>
                 </div>
             </div>
         </div>
         <div class="footer__links">
-            <div>LinkedIn</div>
-            <div>Youtube</div>
-            <div>Facebook</div>
+            <div (click)="redirectToSocialMedia('linkedin')"><img src="../../assets/linkedin.png"/>LinkedIn</div>
+            <div (click)="redirectToSocialMedia('youtube')"> <img src="../../assets/youtube.png"/>Youtube</div>
+            <div (click)="redirectToSocialMedia('instagram')"><img src="../../assets/instagram.png"/>Instagram</div>
         </div>
     </div>
 

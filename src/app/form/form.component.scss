@@ -1,40 +1,27 @@
-.contact-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 40px 10%;
-}
-
 .form-container{
-  padding: 30px 10%;
-  background-color: black;
+  padding: 80px 10% 40px 10%;
+  font-family: 'Space Grotesk', sans-serif;
   &__heading{
     font-size: 35px;
-    font-weight: 700;
+    font-weight: 500;
     padding: 15px;
-    color: white;
-  }
-  &__subheading{
-    font-size: 17px;
-    font-weight: 700;
-    padding: 15px;
-    color: white;
+    
   }
   &__desc{
     font-size: 16px;
     font-weight: 500;
     padding: 15px;
-    color: white;
+    
   }
   &__section{
     display: flex;
-    color: white;
+    
     &__details{
       width: 50%;
       padding-top: 50px;
       &__div{
         display: flex;
-        font-size: 18px;
+        font-size: 16px;
         div{
           padding-bottom: 20px;
           padding-left: 20px;
@@ -64,7 +51,7 @@
         font-weight: 700;
         font-size: 16px;
         margin-bottom: 6px;
-        color: white;
+        
       }
       input,
       textarea {
@@ -88,7 +75,7 @@
       padding: 12px 25px;
       cursor: pointer;
       width: 50%;
-      color: white;
+      
       margin-top: 10px;
       margin-left: 50%;
       &:hover {
@@ -98,117 +85,13 @@
     }
     
 }
-.left-div, .middle-div, .right-div {
-  width: 300px;
-  height: 250px;
-  color: white;
-  background:black; /* Adjust as needed */
-  border-radius: 6px;
-  box-shadow: 0 4px 4px rgb(252, 203, 79); /* Box shadow with desired elevation */
-  padding: 20px 15px;
-  &__img{
-    text-align: center;
-    img{
-      height: 70px;
-      width: 70px;
-    }
-  }
-  &__heading{
-    text-align: center;
-    padding: 10px 0px;
-    font-size: 23px;
-    font-weight: 700;
-    color: rgb(252, 203, 79);
-    letter-spacing: 2px;
-  }
-  &__address{
-    text-align: center;
-    padding: 10px 0px;
-    font-size: 18px;
-    font-weight: 500;
-
-  }
-}
-
-@keyframes slideInFromLeft {
-  0% {
-      transform: translateX(-100%);
-  }
-  100% {
-      transform: translateX(0);
-  }
-}
-
-@keyframes slideInFromBottom {
-  0% {
-      transform: translateY(100%);
-  }
-  100% {
-      transform: translateY(0);
-  }
-}
-
-@keyframes slideInFromRight {
-  0% {
-      transform: translateX(100%);
-  }
-  100% {
-      transform: translateX(0);
-  }
-}
-
-.left-div {
-  animation: slideInFromLeft 1s ease-out forwards;
-}
-
-.middle-div {
-  animation: slideInFromBottom 1s ease-out forwards;
-}
-
-.right-div {
-  animation: slideInFromRight 1s ease-out forwards;
-}
 
 @media only screen and (max-width: 600px) {
-  .contact-container {
-    flex-direction: column;
-    padding: 20px 0%;
-  }
-  .left-div, .middle-div, .right-div {
-    height: 200px;
-    padding: 10px 10px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    &__img{
-      img{
-        height: 50px;
-        width: 50px;
-      }
-    }
-    &__heading{
-      padding: 10px 0px;
-      font-size: 18px;
-      font-weight: 700;
-      letter-spacing: 2px;
-    }
-    &__address{
-      text-align: center;
-      padding: 10px 0px;
-      font-size: 14px;
-      font-weight: 500;  
-    }
-  }
+
   .form-container{
-      padding: 30px 5%;
-      background-color: black;
+      padding: 80px 2% 40px 2%!important;
       &__heading{
         font-size: 30px;
-        padding: 10px;
-      }
-      &__subheading{
-        font-size: 16px;
         padding: 10px;
       }
       &__desc{
@@ -239,7 +122,7 @@
             font-weight: 700;
             font-size: 14px;
             margin-bottom: 6px;
-            color: white;
+            
           }
           input,
           textarea {
@@ -260,5 +143,4 @@
           }
         }  
   }
-
 }

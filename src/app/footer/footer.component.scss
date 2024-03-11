@@ -29,10 +29,18 @@
     }
     &__links{
         width: 10%;
+        cursor: pointer;
+        align-items: center;
+        img{
+            height: 23px;
+            width: 23px;
+            padding-right: 10px;
+        }
         div{
+            display: flex;
             padding: 10px 0px;
-            font-size: 18px;
-            font-weight: 700;
+            font-size: 16px;
+            font-weight: 600;
         }
     }
     &__col{
@@ -43,7 +51,7 @@
             font-size: 20px;
             font-weight: 700;
             padding: 0;
-            margin: 0 0 10px 0;
+            margin: 0 0 4px 0;
             display: flex;
             justify-content: start;
             div{
@@ -56,10 +64,27 @@
                 }
             }
         }
-        &__text{
+        &__text,&__en{
             font-size: 14px;
             line-height: 25px;
             font-weight: 400;
+            a{
+                color: black;
+            }
+            a:hover {
+                color: darkblue;
+            }
+        }
+        &__en{
+            display: flex;
+            align-items: center;
+            div{
+                padding-left: 15px;
+            }
+            img{
+                height: 20px;
+                width: 20px;
+            }
         }
     }
     &__enquiries{
@@ -83,17 +108,19 @@
             flex-direction: column;
             justify-content: center;
             width: 100%;
+            
         }
         &__details{
             width: 100%;
         }
         &__col{
+            width: 46%;
             padding-top: 5px;
             &__header{
                 font-size: 14px;
                 font-weight: 700;
                 padding: 0;
-                margin: 0 0 5px 0;
+                margin: 0 0 4px 0;
                 div{
                     padding-right: 12px;
                     img{
@@ -126,14 +153,20 @@
             flex-direction: row;
             padding-top: 5px;
             width: 100%;
+            flex-wrap: wrap;
+
         }
         &__links{
             display: flex;
             width: 100%;
             justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
             div{
-                padding: 10px 0px;
-                font-size: 14px;
+                display: flex;
+                align-items: center;
+                padding: 20px 0px;
+                font-size: 12px;
                 font-weight: 700;
             }
         }

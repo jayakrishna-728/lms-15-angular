@@ -20,7 +20,6 @@
     &__container{
         display: flex;
         justify-content: space-between;
-        // flex-direction: column;
         width: 90%;
 
     }
@@ -39,7 +38,7 @@
         div{
             display: flex;
             padding: 10px 0px;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 600;
         }
     }
@@ -49,7 +48,7 @@
         flex-wrap: wrap;
         &__header{
             font-size: 20px;
-            font-weight: 700;
+            // font-weight: 700;
             padding: 0;
             margin: 0 0 4px 0;
             display: flex;
@@ -118,7 +117,7 @@
             padding-top: 5px;
             &__header{
                 font-size: 14px;
-                font-weight: 700;
+                // font-weight: 700;
                 padding: 0;
                 margin: 0 0 4px 0;
                 div{
@@ -166,8 +165,7 @@
                 display: flex;
                 align-items: center;
                 padding: 20px 0px;
-                font-size: 12px;
-                font-weight: 700;
+                font-size: 10px;
             }
         }
     }

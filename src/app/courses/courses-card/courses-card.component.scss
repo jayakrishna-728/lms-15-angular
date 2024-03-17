@@ -1,9 +1,8 @@
 .course-card{
     margin: 20px 10px;
-    width: 350px;
+    width: 330px;
     transition: transform .5s ease;     
     box-sizing: border-box;
-    border-radius: 4px;
     box-shadow: 0 1px 2px 0 rgba(0,0,0,0.15);
     animation: slideIn .8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards; /* Adjust duration and timing function */
     &:hover{
@@ -14,11 +13,9 @@
     &__main{
         border-top: 1px solid rgb(255, 255, 255);
         padding: 15px;
-        height: 100px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background: #dae7f6;
         &:hover{
             background: #ebebeb;
         }
@@ -27,7 +24,6 @@
         height: 200px;
         background: #f5e4d9;
         img{
-            // height: 160px;
             width: 100%;
             object-fit: cover;
             background-repeat: no-repeat;
@@ -38,25 +34,41 @@
     }
     
     &__title{
-        // color: #FFFFFF;
         text-align: start;
         font-size: 18px;
         font-weight: 500;
         line-height: 1.25;
-        // font-weight: 600;
     }
     &__description{
-        // color: #FFFFFF;
-        text-align: center;
-        font-size: 14px;
-        padding: 15px 0 20px;
+        font-size: 12px;
+        padding: 10px 0 0px 0px;
+        height: 53px;
     }
     &__info{
         display: flex;
-        justify-content: space-between;
-        font-size: 18px;
         line-height: 1.2;
-        // padding: 0 30px;
+        padding: 10px 0px 10px 0px;
+        .details{
+            font-size: 12px;
+            letter-spacing: 0.5px;
+        }
+        .heading{
+            font-size: 12px;
+            color: #838383;
+            letter-spacing: 1px;
+        }
+        .duration{
+            padding-left: 30px;
+        }
+    }
+    button{
+        padding: 10px 25px;
+        outline: none;
+        font-size: 12px;
+        background: rgb(159 131 4);
+        color: white;
+        border: none;
+        cursor: pointer;
     }
     &__col{
         display: flex;

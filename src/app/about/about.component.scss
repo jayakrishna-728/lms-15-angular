@@ -1,53 +1,148 @@
 .aboutus{
-    display: flex;
-    justify-content: center;
-    padding: 20px 20%;
-    background: rgb(255, 191, 35);
-    &__content{
-        color: white;
-        font-size: 16px;
-        display: flex;
-        flex-direction: column;
-        animation: slideFromLeft 1s ease-in-out forwards; /* Animate content from left */
-        transform: translateX(-100%); /* Initially position content outside the viewport */
-        &__heading{
-            padding-top: 30px;
-            font-size: 35px;
-            font-weight: 700;
-        }
-        &__subheading{
-            padding-top: 5px;
-            font-size: 43px;
-            font-weight: 500;
-        }
+    padding: 100px 10% 30px 10%;
+    &__container{
+        height: 350px;
+        width: 100%;
+        background-image: url(../../assets/aboutusbackground.jpg);
+        background-size: cover; /* Cover the entire container */
+        background-position: center; /* Center the background image */
+        position: relative;
         &__text{
-            padding-top: 10px;
-            line-height: 35px;
-            letter-spacing: 0.5px;
-            font-size: 18px
+           width: 100%;
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%,-50%);
+           background-color: rgba(255, 255, 255, 0.9); /* White color with 70% opacity */
+           &__heading{
+                padding:30px 0px 0px 0px;
+                font-size: 24px;
+                color: rgb(0, 90, 60);
+                text-align: center;
+           }
+           &__subheading{
+                letter-spacing: 1px;
+                padding: 10px 0px 30px 0px;
+                font-size: 12px;
+                color: black;
+                text-align: center;
+           }
         }
-
     }
-    &__img{
+
+    &__heading{
+        font-size: 25px;
+        color: rgb(0, 90, 60);
+        position: relative;
+        padding: 40px 0px;
+        text-align: center;
+        .line{
+            height: 2px;
+            background: rgb(0, 90, 60);
+            width: 100%;
+        }
+        span{
+            background: white;
+            position: absolute;
+            top: 50%;
+            padding: 0px 9px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+    }
+    &__topdesc,    &__bottomdesc{
         display: flex;
-        align-items: center;
-        animation: slideFromRight 1s ease-in-out forwards; /* Animate image from right */
-        transform: translateX(100%); /* Initially position image outside the viewport */
-        img{
-            height: 400px;
-            width: 400px;
-            opacity: 0.7;
-            // animation: rotateImage 25s linear infinite;
+        justify-content: center;
+        .heading{
+            font-size: 19px;
+            font-weight: 600;
+            padding-bottom: 10px;
+            text-align: center;
+            width: 100%;
         }
-        div{
-
+        .text{
+            font-size: 13px;
+            line-height: 20px;
+            text-align: center;
+            width: 100%;
+        }
+        .content{
+            padding-left: 25px;
+            width: 30%;
         }
     }
+    &__mission{
+        text-align: center;
+        padding: 30px 0px 10px 0px;
+        font-size: 28px;
+    }
+    &__bottomdesc{
+        padding-top: 40px;
+    }
+    &__valuecontainer{
+        background: linear-gradient(to top right, rgba(255, 255, 255, 0.3), rgb(255, 191, 35));;
+        padding: 20px 30px 20px 45px;
+        div{
+            font-size: 14px;
+            font-weight: 600;
+        }
+        img{
+            height: 30px;
+            width: 30px;
+        }
+        .mission,.vision,.goals{
+            display: flex;
+            padding: 40px 0px 0px 0px;
+        }
+        .vision{
+            animation: slideFromLeft .8s ease-in-out forwards;
+            img{
+                height: 40px;
+                width: 40px;
+            }
+        }
+        .mission{
+            padding-left: 100px;
+            animation: slideFromLeft 1s ease-in-out forwards;
+            img{
+                height: 40px;
+                width: 40px;
+            }
+        }
+        .goals{
+            animation: slideFromLeft 2s ease-in-out forwards;
+            padding-left: 180px;
+            img{
+                height: 60px;
+                width: 60px;
+                margin-left: -10px;
+            }
+        }
+        .text{
+            padding-left: 20px;
+            .header{
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 30px;
+                // padding-bottom: 10px;
+            }
+            .sub{
+                font-size: 12px;
+                line-height: 20px;
+                font-weight: 500;
+
+            }
+        }
+    }
+
+
+
     
 }
 @keyframes slideFromLeft {
     from {
-        transform: translateX(-100%);
+        transform: translateX(-50px);
     }
     to {
         transform: translateX(0);
@@ -56,7 +151,7 @@
 
 @keyframes slideFromRight {
     from {
-        transform: translateX(100%);
+        transform: translateX(50px);
     }
     to {
         transform: translateX(0);
@@ -70,124 +165,137 @@
 }
 @media only screen and (max-width: 600px) {
     .aboutus{
-        flex-direction: column;
-        align-items: center;
-        padding: 10px 2%;
-        &__content{
-            &__heading{
-                padding-top: 20px;
-                font-size: 25px;
-                font-weight: 700;
-            }
-            &__subheading{
-                padding-top: 10px;
-                font-size: 33px;
-                font-weight: 500;
-            }
+        padding: 100px 10% 30px 10%;
+        &__container{
             &__text{
-                padding-top: 20px;
-                line-height: 30px;
-                letter-spacing: 0.5px;
-                font-size: 14px
-            }
-    
-        }
-        &__img{
-            display: flex;
-            align-items: center;
-            animation: slideFromRight 1s ease-in-out forwards; /* Animate image from right */
-            transform: translateX(100%); /* Initially position image outside the viewport */
-            img{
-                height: 200px;
-                width: 200px;
-                opacity: 0.7;
-                animation: rotateImage 25s linear infinite;
+               &__heading{
+                    padding:30px 0px 0px 0px;
+                    font-size: 24px;
+               }
+               &__subheading{
+                    font-size: 12px;
+                    color: black;
+                    text-align: center;
+               }
             }
         }
-        
-    }    
-}
 
-.contact-container {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    // align-items: center;
-    padding: 30px 5%;
-    &__content{
-        display: flex;
-        justify-content: center;
-        margin-bottom: 50px;
-        &__image{
+        &__heading{
+            font-size: 25px;
+            color: rgb(0, 90, 60);
+            position: relative;
+            padding: 40px 0px;
+            text-align: center;
+            .line{
+                height: 2px;
+                background: rgb(0, 90, 60);
+                width: 100%;
+            }
+            span{
+                background: white;
+                position: absolute;
+                top: 50%;
+                padding: 0px 9px;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            
+        }
+        &__topdesc,    &__bottomdesc{
             display: flex;
             flex-direction: column;
-            align-items: center;
-            animation: slideInFromLeft 1s ease-out forwards;
-            padding: 15px 25px 15px 15px;
-            width: 25%;
-            img{
-                height: 150px;
-                width: 150px;
-            }
-            div{
-                font-size: 24px;
-                font-weight: 700;
-                padding-top: 20px;
-
-            }
-        }
-        &__text{
-                width: 75%;
-                padding-left: 30px;
-                animation: slideInFromRight 1s ease-out forwards;
+            justify-content: center;
+            .heading{
+                font-size: 19px;
+                font-weight: 600;
+                padding-bottom: 10px;
+                text-align: center;
                 width: 100%;
-                // height: 250px;
-                color: black;
-                border-radius: 6px;
-                // border-top: 4px solid rgb(252, 203, 79);
-                // box-shadow: 4px 4px 4px rgb(252, 203, 79); /* Box shadow with desired elevation */
-                padding: 20px 15px;
-                &__heading{
-                text-align: start;
-                padding: 10px 0px;
-                font-size: 28px;
-                font-weight: 700;
-                color: rgb(252, 203, 79);
-                letter-spacing: 2px;
-                }
-                &__subheading{
-                    text-align: start;
-                    font-size: 24px;
-                    color: black;
-                    font-weight: 700;
-                    letter-spacing: 1px;
-                    padding-bottom: 10px;
-                }
-                &__address{
-                    text-align: start;
-                    padding: 10px 0px;
-                    font-size: 18px;
-                    font-weight: 500;
-                    line-height: 30px;
-                    span{
-                        font-weight: 700;
-                        font-size: 20px;
-                    }
-            
-                }
-
+            }
+            .text{
+                font-size: 13px;
+                line-height: 20px;
+                text-align: center;
+                width: 100%;
+            }
+            .content{
+                padding-left: 0px;
+                padding-top: 10px;
+                width: 100%;
+            }
         }
+        &__mission{
+            text-align: center;
+            padding: 20px 0px 10px 0px;
+            font-size: 24px;
+        }
+        &__bottomdesc{
+            padding-top: 10px;
+        }
+        &__valuecontainer{
+            background: linear-gradient(to top right, rgba(255, 255, 255, 0.3), rgb(255, 191, 35));;
+            padding: 20px 30px 20px 45px;
+            div{
+                font-size: 14px;
+                font-weight: 600;
+            }
+            img{
+                height: 30px;
+                width: 30px;
+            }
+            .mission,.vision,.goals{
+                display: flex;
+                padding: 20px 0px 0px 0px;
+            }
+            .vision{
+                animation: slideFromLeft .8s ease-in-out forwards;
+                img{
+                    height: 40px;
+                    width: 40px;
+                }
+            }
+            .mission{
+                animation: slideFromLeft 1s ease-in-out forwards;
+                img{
+                    height: 40px;
+                    width: 40px;
+                }
+            }
+            .goals{
+                animation: slideFromLeft 2s ease-in-out forwards;
+                img{
+                    height: 60px;
+                    width: 60px;
+                    margin-left: -10px;
+                }
+            }
+            .text{
+                padding-left: 20px;
+                .header{
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 30px;
+                    // padding-bottom: 10px;
+                }
+                .sub{
+                    font-size: 12px;
+                    line-height: 20px;
+                    font-weight: 500;
+    
+                }
+            }
+        }
+    
+    
+    
+        
+    }
+    
+ 
+}
 
-    }
-  }
-  @keyframes slideInFromLeft {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(0);
-    }
-  }
+
+
   
   @keyframes slideInFromBottom {
     0% {
@@ -209,70 +317,6 @@
   
   @media only screen and (max-width: 600px) {
 
-
-    .contact-container {
-      flex-direction: column;
-    //   padding: 20px 0%;
-    padding: 20px 0;
-      &__content{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        padding: 0 5%;
-        margin-bottom: 20px;
-        &__image{
-            display: none;
-        }
-        &__text{
-                padding-left: 30px;
-                animation: slideInFromRight 1s ease-out forwards;
-                width: unset;
-                height: unset;
-                color: black;
-                border-radius: 6px;
-                // border-left: 4px solid rgb(252, 203, 79);
-                // border-top: 4px solid rgb(252, 203, 79);
-                // box-shadow: 4px 4px 4px rgb(252, 203, 79); /* Box shadow with desired elevation */
-                padding: 20px 15px;
-                &__heading{
-                text-align: start;
-                padding: 10px 0px;
-                font-size: 28px;
-                font-weight: 700;
-                color: rgb(252, 203, 79);
-                letter-spacing: 2px;
-                }
-                &__subheading{
-                    text-align: start;
-                    font-size: 24px;
-                    color: black;
-                    font-weight: 700;
-                    letter-spacing: 1px;
-                }
-                &__address{
-                    text-align: start;
-                    padding: 10px 0px;
-                    font-size: 15px;
-                    font-weight: 500;
-                    line-height: 35px;
-            
-                }
-
-        }
-
-      }
-    }
-    
-
-    
-    @keyframes slideInFromLeft {
-      0% {
-          transform: translateX(-100%);
-      }
-      100% {
-          transform: translateX(0);
-      }
-    }
     
     @keyframes slideInFromBottom {
       0% {

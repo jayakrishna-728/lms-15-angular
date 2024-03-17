@@ -25,6 +25,9 @@ export class HeaderComponent implements OnInit {
     setTimeout(()=>{
       let currentRoute = this.router.url;
       console.log(currentRoute);
+      if(currentRoute.includes("details")){
+        this.router.navigateByUrl('/ievlearning');
+      } else
       if(currentRoute.includes("contact")){
         this.isContactus=true;
         this.homeActive=false;

@@ -17,9 +17,9 @@ import { JourneyComponent } from './journey/journey.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeLearningHubComponent } from './home-learning-hub/home-learning-hub.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
-import { FocusComponent } from './focus/focus.component';
 import { BlogsComponent } from './blogs/blogs.component';
 import { CareersComponent } from './careers/careers.component';
+import { DetailsComponent } from './courses/details/details.component';
 
 @NgModule({
   declarations: [
@@ -37,9 +37,9 @@ import { CareersComponent } from './careers/careers.component';
     JourneyComponent,
     HomeLearningHubComponent,
     TestimonialsComponent,
-    FocusComponent,
     BlogsComponent,
-    CareersComponent
+    CareersComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,

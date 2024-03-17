@@ -1,0 +1,39 @@
+<div class="details-component" *ngIf="course">
+    <div class="img-enroll" [style.background-image]="'url(' + course.img + ')'">
+        <div class="container">
+            <div class="heading">{{course.title}}</div>
+            <div class="container__flex">
+                <div>
+                        <div class="heading-duration">Price</div>
+                        <div class="details">{{course.price}}</div>
+                </div>
+                <div class="duration">
+                        <div class="heading-duration">Duration</div>
+                        <div class="details">{{course.duration}}</div>
+                </div>
+            </div>
+            <div class="button">Enroll</div>
+        </div>
+    </div>
+    <div class="content">
+        <div (click)="backCourses()" style="cursor: pointer;"> < Back</div>
+        <div class="content__header">About the course</div>
+        <div class="content__description">
+            <!-- {{course.description}} -->
+            This is placeholder text. To change this content, double-click on the element and click Change Content
+            This is placeholder text. To change this content, double-click on the element and click Change Content
+            This is placeholder text. To change this content, double-click on the element and click Change Content
+            This is placeholder text. To change this content, double-click on the element and click Change Content
+        </div>
+        <div class="content__header">Your Instructor</div>
+        <div class="content__instructor">Venu</div>
+        <div class="content__description">
+            <!-- {{course.description}} -->
+            This is placeholder text. To change this content, double-click on the element and click Change Content
+            This is placeholder text. To change this content, double-click on the element and click Change Content
+        </div>
+        <div></div>
+    </div>
+
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,148 @@
+.details-component{
+    padding-top: 83px;
+    .img-enroll{
+        background-size: cover; /* Cover the entire container */
+        background-position: center; /* Center the background image */
+        height: 400px;
+        position: relative;
+        .container{
+            height: 300px;
+            width: 350px;
+            background: white;
+            left: 55%;
+            top: 10%;
+            padding: 20px;
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            &__flex{
+                display: flex;
+                padding-top: 40px;
+                .details{
+                    font-size: 24px;
+                    padding-top: 5px;
+                    letter-spacing: 0.5px;
+                    color: black;
+                }
+                .heading-duration{
+                    font-size: 15px;
+                    color: #838383;
+                    letter-spacing: 1px;
+                }
+                .duration{
+                    font-size: 15px;
+                    padding-left: 30px;
+                    color: black;
+                }
+            }
+            .heading{
+                font-size: 30px;
+                font-weight: 500;
+                padding-top: 30px;
+            }
+            .button{
+                padding: 15px 25px;
+                background: rgb(159 131 4);
+                width: 155px;
+                color: white;
+                text-align: center;
+            }
+        }
+    }
+    .content{
+        padding: 30px 15%;
+        &__header{
+            font-size: 26px;
+            padding-top: 20px;
+            font-weight: 500;
+        }
+        &__description{
+            font-size: 15px;
+            line-height: 35px;
+        }
+        &__instructor{
+            padding-top: 10px;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 35px;
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .details-component{
+        padding-top: 60px;
+        .img-enroll{
+                height: 100%;
+                position: relative;
+                display: flex;
+                align-items: center;
+                .container{
+                    height: 250px;
+                    background: transparent;
+                    padding: 5px;
+                    display: flex;
+                    position: unset;
+                    left: 0px;
+                    top: 0px;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    &__flex{
+                        display: flex;
+                        padding-top: 30px;
+                        .details{
+                            font-size: 22px;
+                            padding-top: 5px;
+                            letter-spacing: 0.5px;
+                            color: black;
+                        }
+                        .heading-duration{
+                            font-size: 15px;
+                            color: #838383;
+                            letter-spacing: 1px;
+                        }
+                        .duration{
+                            font-size: 15px;
+                            padding-left: 30px;
+                            color: black;
+                        }
+                    }
+                    .heading{
+                        font-size: 30px;
+                        font-weight: 600;
+                        padding-top: 30px;
+                    }
+                    .button{
+                        padding: 15px 25px;
+                        background: rgb(159 131 4);
+                        width: 155px;
+                        color: white;
+                        text-align: center;
+                    }
+                }
+            }
+            .content{
+                padding: 30px 5%;
+                &__header{
+                    font-size: 26px;
+                    padding-top: 20px;
+                    font-weight: 500;
+                }
+                &__description{
+                    font-size: 15px;
+                    line-height: 35px;
+                }
+                &__instructor{
+                    padding-top: 10px;
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 35px;
+                }
+        
+            }
+        
+        }
+}

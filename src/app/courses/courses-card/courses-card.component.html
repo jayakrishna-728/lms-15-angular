@@ -4,11 +4,17 @@
     </div>
     <div class="course-card__main">
         <div class="course-card__title">{{courseData.title}}</div>
+        <div class="course-card__description">{{courseData.description}}</div>
         <div class="course-card__info">
-            <div class="course-card__col">
-              12 x 
-                <span>{{courseData.price}}</span>
+            <div>
+                <div class="heading">Price</div>
+                <div class="details">{{courseData.price}}</div>
+            </div>
+            <div class="duration">
+                <div class="heading">Duration</div>
+                <div class="details">{{courseData.duration}}</div>
             </div>
         </div>
+        <div><button (click)="readMore(courseData)">Read More</button></div>
     </div>
 </div>

@@ -87,10 +87,6 @@
             font-size: 14px;
             font-weight: 600;
         }
-        img{
-            height: 30px;
-            width: 30px;
-        }
         .mission,.vision,.goals{
             display: flex;
             padding: 40px 0px 0px 0px;
@@ -135,9 +131,6 @@
             }
         }
     }
-
-
-
     
 }
 @keyframes slideFromLeft {
@@ -157,15 +150,9 @@
         transform: translateX(0);
     }
 }
-
-@keyframes rotateImage {
-    to {
-        transform: rotate(360deg);
-    }
-}
 @media only screen and (max-width: 600px) {
     .aboutus{
-        padding: 100px 10% 30px 10%;
+        padding: 100px 5% 30px 5%;
         &__container{
             &__text{
                &__heading{
@@ -191,15 +178,6 @@
                 background: rgb(0, 90, 60);
                 width: 100%;
             }
-            span{
-                background: white;
-                position: absolute;
-                top: 50%;
-                padding: 0px 9px;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-            
         }
         &__topdesc,    &__bottomdesc{
             display: flex;
@@ -239,35 +217,9 @@
                 font-size: 14px;
                 font-weight: 600;
             }
-            img{
-                height: 30px;
-                width: 30px;
-            }
             .mission,.vision,.goals{
                 display: flex;
                 padding: 20px 0px 0px 0px;
-            }
-            .vision{
-                animation: slideFromLeft .8s ease-in-out forwards;
-                img{
-                    height: 40px;
-                    width: 40px;
-                }
-            }
-            .mission{
-                animation: slideFromLeft 1s ease-in-out forwards;
-                img{
-                    height: 40px;
-                    width: 40px;
-                }
-            }
-            .goals{
-                animation: slideFromLeft 2s ease-in-out forwards;
-                img{
-                    height: 60px;
-                    width: 60px;
-                    margin-left: -10px;
-                }
             }
             .text{
                 padding-left: 20px;
@@ -275,7 +227,6 @@
                     font-size: 18px;
                     font-weight: 600;
                     line-height: 30px;
-                    // padding-bottom: 10px;
                 }
                 .sub{
                     font-size: 12px;
@@ -285,57 +236,6 @@
                 }
             }
         }
-    
-    
-    
         
     }
-    
- 
 }
-
-
-
-  
-  @keyframes slideInFromBottom {
-    0% {
-        transform: translateY(100%);
-    }
-    100% {
-        transform: translateY(0);
-    }
-  }
-  
-  @keyframes slideInFromRight {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(0);
-    }
-  }
-  
-  @media only screen and (max-width: 600px) {
-
-    
-    @keyframes slideInFromBottom {
-      0% {
-          transform: translateY(100%);
-      }
-      100% {
-          transform: translateY(0);
-      }
-    }
-    
-    @keyframes slideInFromRight {
-      0% {
-          transform: translateX(100%);
-      }
-      100% {
-          transform: translateX(0);
-      }
-    }
-    
-
-  }  
-  

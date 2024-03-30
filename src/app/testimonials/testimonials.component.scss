@@ -11,7 +11,7 @@
     &__div{
         border: 3px solid black;
         height: 350px;
-        width: 241px;
+        width: 280px;
         border-radius: 30px;
         overflow: hidden;
         font-size: 22px;
@@ -34,6 +34,7 @@
     .testimonials{
         flex-direction: column;
         padding: 10px 5%;
+        align-items: center;
         &__div{
             height: 180px;
             width: 300px;

@@ -5,12 +5,12 @@
     &__desc{
         position: relative;
         padding: 30px 10% 30px 10%;
-        height: 250px;
+        // height: 250px;
         background-image: url('../../assets/journeyhome.png '); /* Path to your background image */
         background-size: cover; /* Cover the entire container */
         background-position: center; /* Center the background image */
         &__text{
-            font-size: 24px;
+            font-size: 18px;
             font-weight: 400;
             text-align: start;
             overflow: hidden;
@@ -43,7 +43,7 @@
         &__obj{
             display: flex;
             width: 50%;
-            height: 230px;
+            // height: 230px;
             align-items: flex-end;
             &__content{
                 padding: 0px 25px;
@@ -52,8 +52,8 @@
                 div{
                     padding: 10px 0px;
                     img{
-                        height: 50px;
-                        width: 50px;
+                        height: 39px;
+                        width: 39px;
                     }
                 }
             }
@@ -76,6 +76,42 @@
                   transform: translateX(100%); /* Adjust the distance the image should move */
                 }
               }
+        }
+        &__header{
+            font-size: 24px;
+            font-weight: 400;
+            text-align: start;
+            padding: 15px 0px;
+            span{
+                font-weight: 700;
+            }
+        }
+        &__started{
+            // justify-content: center;
+            padding: 45px 0px 15px 0px;
+            align-items: center;
+            display: flex;
+            div{
+                background: rgb(255, 191, 35);
+                color: black;
+                cursor: pointer;
+                text-align: center;
+                border-radius: 6px;
+                padding: 14px 15px;
+                min-width: 150px;
+                max-width: 200px;
+                font-size: 15px;
+                font-weight: 700;
+                border: 2px solid black;
+                &:hover{
+                    color: rgb(255, 191, 35);
+                    background: black;
+                    transform: scale(1);
+                    transition: all .4s ease-in;
+                    cursor: pointer;
+                    border: 2px solid rgb(255, 191, 35);
+                }
+            }
         }
     }
 
@@ -155,7 +191,7 @@
         &__desc{
             position: relative;
             padding: 20px 5px 10px 0px;
-            height: 100px;
+            // height: 100px;
             &__text{
                 font-size: 10px;
                 font-weight: 400;
@@ -263,6 +299,16 @@
                 &__flex{
                     height: 200px;
                     margin-top: 20px;
+                    &__heading{
+                        padding: 20px 30px 0px 60px;
+                        margin: 0 auto;
+                        font-size: 20px;
+                    }
+                    &__subheading{
+                        padding: 20px 30px 20px 60px;
+                        font-size: 14px;
+                    }
+    
                 }
 
             }

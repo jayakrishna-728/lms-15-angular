@@ -13,15 +13,12 @@
             font-size: 18px;
             font-weight: 400;
             text-align: start;
-            overflow: hidden;
-            white-space: nowrap;
             animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
             margin: 0 auto;
             display: inline-block;
             span{
                 font-weight: 700;
             }
-            /* Keyframes for the typing effect */
             @keyframes typing {
                 from {
                 width: 0;
@@ -30,7 +27,6 @@
                 width: 100%;
                 }
             }
-            /* Keyframes for the blinking cursor effect */
             @keyframes blink-caret {
                 from, to {
                 border-color: transparent;
@@ -57,25 +53,6 @@
                     }
                 }
             }
-        }
-        &__movimg{
-            img {
-                height:200px;
-                opacity: 0.4;
-                width:200px;
-                position: absolute;
-                top: 30%;
-                left:40%;
-                animation: moveRight 2s linear infinite; /* Adjust animation duration and timing function as needed */
-              }
-              @keyframes moveRight {
-                0% {
-                  transform: translateX(0);
-                }
-                100% {
-                  transform: translateX(100%); /* Adjust the distance the image should move */
-                }
-              }
         }
         &__header{
             font-size: 24px;
@@ -191,14 +168,10 @@
         &__desc{
             position: relative;
             padding: 20px 5px 10px 0px;
-            // height: 100px;
             &__text{
                 font-size: 10px;
                 font-weight: 400;
-                // border-right: .10em solid rgb(255, 191, 35); /* The typewriter cursor */
                 animation: typing 2.5s steps(30, end), blink-caret .5s step-end infinite;
-                margin: 0 auto;
-                display: inline-block;
                 span{
                     font-weight: 700;
                 }
@@ -237,24 +210,6 @@
                     }
                 }
             }
-            &__movimg{
-                img {
-                    height: 120px;
-                    width: 120px;
-                    position: absolute;
-                    top: 25%;
-                    left:20%;
-                    animation: moveRight 2s linear infinite; /* Adjust animation duration and timing function as needed */
-                  }
-                  @keyframes moveRight {
-                    0% {
-                      transform: translateX(0);
-                    }
-                    100% {
-                      transform: translateX(100%); /* Adjust the distance the image should move */
-                    }
-                  }
-            }
         }
         &__video{
             width: 100%;
@@ -282,15 +237,12 @@
                 }
             }
         }
-
         .events{
             padding: 30px 5%;
             &__heading{
                 font-size: 24px;
                 font-weight: 600;
-                text-align: center;
                 padding: 10px 0px;
-                font-family: 'Space Grotesk', sans-serif;
             }
             &__container{
                 display: flex;
@@ -308,11 +260,9 @@
                         padding: 20px 30px 20px 60px;
                         font-size: 14px;
                     }
-    
                 }
 
             }
         }
     }
-
   }

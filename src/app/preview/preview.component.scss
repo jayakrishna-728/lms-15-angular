@@ -1,11 +1,9 @@
 .video-container {
     position: relative;
-    // padding: 0% 10%;
     overflow: hidden;
     &__desc{
         position: relative;
         padding: 30px 10% 30px 10%;
-        // height: 250px;
         background-image: url('../../assets/journeyhome.png '); /* Path to your background image */
         background-size: cover; /* Cover the entire container */
         background-position: center; /* Center the background image */
@@ -39,7 +37,6 @@
         &__obj{
             display: flex;
             width: 50%;
-            // height: 230px;
             align-items: flex-end;
             &__content{
                 padding: 0px 25px;
@@ -64,7 +61,6 @@
             }
         }
         &__started{
-            // justify-content: center;
             padding: 45px 0px 15px 0px;
             align-items: center;
             display: flex;
@@ -172,19 +168,6 @@
                 font-size: 10px;
                 font-weight: 400;
                 animation: typing 2.5s steps(30, end), blink-caret .5s step-end infinite;
-                span{
-                    font-weight: 700;
-                }
-                /* Keyframes for the typing effect */
-                @keyframes typing {
-                    from {
-                    width: 0;
-                    }
-                    to {
-                    width: 100%;
-                    }
-                }
-                /* Keyframes for the blinking cursor effect */
                 @keyframes blink-caret {
                     from, to {
                     border-color: transparent;
@@ -240,8 +223,6 @@
         .events{
             padding: 30px 5%;
             &__heading{
-                font-size: 24px;
-                font-weight: 600;
                 padding: 10px 0px;
             }
             &__container{
@@ -261,7 +242,6 @@
                         font-size: 14px;
                     }
                 }
-
             }
         }
     }

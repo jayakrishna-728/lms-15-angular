@@ -11,6 +11,8 @@
             font-size: 18px;
             font-weight: 400;
             text-align: start;
+            overflow: hidden;
+            white-space: nowrap;
             animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
             margin: 0 auto;
             display: inline-block;
@@ -177,8 +179,26 @@
                     }
                 }
             }
+            &__started{
+                padding: 25px 0px 15px 0px;
+                align-items: center;
+                display: flex;
+                div{
+                    background: rgb(255, 191, 35);
+                    color: black;
+                    cursor: pointer;
+                    text-align: center;
+                    border-radius: 4px;
+                    padding: 12px 15px;
+                    min-width: 100px;
+                    max-width: 200px;
+                    font-size: 15px;
+                    font-weight: 700;
+                    border: 1.5px solid black;
+                }
+            }
             &__obj{
-                height: 85px;
+                height: 75px;
                 &__content{
                     padding: 0px 10px;
                     font-size: 13px;
@@ -217,30 +237,6 @@
                     padding-top: 30px;
                     font-size: 12px;
                     width: 100%;
-                }
-            }
-        }
-        .events{
-            padding: 30px 5%;
-            &__heading{
-                padding: 10px 0px;
-            }
-            &__container{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                &__flex{
-                    height: 200px;
-                    margin-top: 20px;
-                    &__heading{
-                        padding: 20px 30px 0px 60px;
-                        margin: 0 auto;
-                        font-size: 20px;
-                    }
-                    &__subheading{
-                        padding: 20px 30px 20px 60px;
-                        font-size: 14px;
-                    }
                 }
             }
         }

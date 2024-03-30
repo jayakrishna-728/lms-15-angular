@@ -20,6 +20,7 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { BlogsComponent } from './blogs/blogs.component';
 import { CareersComponent } from './careers/careers.component';
 import { DetailsComponent } from './courses/details/details.component';
+import { EventsComponent } from './events/events.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { DetailsComponent } from './courses/details/details.component';
     TestimonialsComponent,
     BlogsComponent,
     CareersComponent,
-    DetailsComponent
+    DetailsComponent,
+    EventsComponent
   ],
   imports: [
     BrowserModule,

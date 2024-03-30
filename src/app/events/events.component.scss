@@ -1,0 +1,66 @@
+.events{
+    padding: 30px 10%;
+    &__heading{
+        font-size: 24px;
+        font-weight: 600;
+        text-align: center;
+        padding: 30px 0px;
+        font-family: 'Space Grotesk', sans-serif;
+    }
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        &__flex{
+            height: 400px;
+            width: 300px;
+            border: 2px solid rgb(223, 223, 223);
+            .button{
+                cursor: pointer;
+                padding: 10px 25px;
+                color: white;
+                width: 70px;
+                text-align: center;
+                font-size: 14px;
+                margin: 0 auto;
+                background:rgb(159 131 4);
+            }
+            &__heading{
+                padding: 260px 30px 0px 30px;
+                font-size: 20px;
+            }
+            &__subheading{
+                padding: 20px 30px;
+                font-size: 14px;
+            }
+
+        }
+
+    }
+}
+@media only screen and (max-width: 600px) {
+    
+        .events{
+            padding: 30px 5%;
+            &__heading{
+                padding: 10px 0px;
+            }
+            &__container{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                &__flex{
+                    height: 200px;
+                    margin-top: 20px;
+                    &__heading{
+                        padding: 20px 30px 0px 60px;
+                        margin: 0 auto;
+                        font-size: 20px;
+                    }
+                    &__subheading{
+                        padding: 20px 30px 20px 60px;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }

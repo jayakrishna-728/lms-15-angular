@@ -20,7 +20,7 @@ export class AppService {
     this.showContactFormSubject.next(false);
   }
    postData(user:any): Observable<any> {
-    const url = 'https://lms-backend-drab.vercel.app/userdatar';
+    const url = 'https://lms-backend-drab.vercel.app/userdata';
     // return this.http.post(url, user);
 
     const headers = new HttpHeaders({
